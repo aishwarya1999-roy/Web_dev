@@ -1,0 +1,45 @@
+*{
+	padding:0;
+	margin: 0;
+}
+
+body{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #f4f4f4;
+}
+.shape1{
+	position: relative;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 4px solid whitesmoke;
+	box-shadow: 10px -20px 35px red,10px 20px 35px green,-20px 10px 35px blue,inset -10px 0px 10px lightyellow,inset 0px 10px 10px pink,inset 10px 0px 10px skyblue ;
+	/*box-shadow: 10px -20px 35px rgba(255 , 255, 255, 1.0), 10px 20px 10px rgba(0, 0, 0, 1.0),inset -10px -10px 15px rgba(255, 255, 255, 1.0), inset 10px 10px 10px rgba(0, 0, 0, 1.0);
+	*/
+	animation: animate 0.5s linear infinite; 
+
+}
+
+.shape2{
+	justify-content: right;
+	align-items: center;
+	position: relative;
+	height: 200px;
+	width: 200px;
+	/*border-radius: 50%;*/
+	border: 4px solid whitesmoke;
+	box-shadow: 10px -20px 35px red,10px 20px 35px green,-20px 10px 35px blue,inset -10px 0px 15px yellow,inset 0px 10px 15px hotpink,inset 10px 0px 10px blueviolet,inset 0px -10px 10px seagreen ;
+	/*box-shadow: 10px -20px 35px rgba(255, 255, 255, 1.0), 10px 20px 10px rgba(0, 0, 0, 1.0), inset -10px -10px 15px rgba(255, 255, 255, 1.0), inset 10px 10px 10px rgba(0, 0, 0, 1.0);*/
+	animation: animate 0.5s linear infinite;
+}
+@keyframes animate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
