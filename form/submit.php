@@ -1,16 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <title> Thank You </title>
+</head>
 
 
 <center>
-  <img src= "tick.png" height="100px" width="100px"/>
-  <H1> Thank You for Submiting </H1></center>
+  <div class="checkmark-circle">
+    <div class="background"></div>
+    <div class="checkmark draw"></div>
+  </div>
+  <H1> Thank You for Joining </H1>
+</center>
 
 <pre>
 <?php
 $data_file=fopen("example.txt", "w");
 
     $First_Name =$_POST["firstname"];
-    $Middle_Name =$_POST["middlename"];
     $Last_Name =$_POST["lastname"];
     $Gender =$_POST["gender"];
     $country_code =$_POST["country_code"];
@@ -18,7 +30,7 @@ $data_file=fopen("example.txt", "w");
     $Email_Id =$_POST["email"];
     $Password =$_POST["psw"];
 
-$text_to_write= "First_Name : ". $First_Name."\n"."Middle_Name : ".$Middle_Name."\n"."Last_Name : ".$Last_Name."\n"."Gender : ".$Gender."\n"."country_code : ".$country_code."\n".
+$text_to_write= "First_Name : ". $First_Name."\n"."Last_Name : ".$Last_Name."\n"."Gender : ".$Gender."\n"."country_code : ".$country_code."\n".
 "Phone_Number : ".$Phone_Number."\n"."Email_Id : ".$Email_Id."\n"."Password: ". $Password;
 
 
